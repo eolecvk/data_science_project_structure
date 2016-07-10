@@ -7,12 +7,11 @@
 
 ## [Why and how to ditch Windows for Linux](https://github.com/eolecvk/data_science_project_structure/blob/master/1_from_windows_to_linux.Rmd)
 
-
+Linux will make your life easier. I promise.
 
 ## [Walkthrough of the `cookiecutter` package (python)](https://github.com/eolecvk/data_science_project_structure/blob/master/2_cookiecutter_datascience.Rmd)
 
 `cookiecutter` is a neat package that will help you generate compelling project structures in Python.
-This tutorial aims at giving an overview of the useful features this package makes available.
 
 ## [Start using git](https://github.com/eolecvk/data_science_project_structure/blob/master/3_quick_github_tutorial.Rmd)
 
