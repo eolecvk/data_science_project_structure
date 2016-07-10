@@ -1,4 +1,4 @@
-# Cookie Cutter
+# Cookie Cutter for Data Science Projects
 
 * Source: [Cookie Cutter for Data Science, drivendata.org](http://drivendata.github.io/cookiecutter-data-science/)
 * Github: [audreyr/cookiecutter](https://github.com/audreyr/cookiecutter)
