@@ -7,7 +7,7 @@
 
 ## Why and how to ditch Windows for Linux
 
-## Walkthough of the `cookiecutter` package (python)
+## Walkthrough of the `cookiecutter` package (python)
 
 `cookiecutter` is a neat package that will help you generate compelling project structures in Python.
 This tutorial aims at giving an overview of the useful features this package makes available.
