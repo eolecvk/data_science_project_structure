@@ -1,14 +1,3 @@
----
-title: "From windows to linux"
-author: "Eole Cervenka"
-date: "July 8, 2016"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Why use Linux ?
 
 Modern days dev need to work with Open Source technology which are native to Unix and do not work smoothly on Windows.
