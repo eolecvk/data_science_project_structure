@@ -1,4 +1,4 @@
-# Using Version Control Tool Git
+# Using Git
 
 ## Philosophy of Git
 
