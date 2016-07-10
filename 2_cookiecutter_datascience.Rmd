@@ -77,7 +77,7 @@ Then move to the new project folder:
 Initialize git repository from project folder:
 `git init`
 
-(In case you are not already using the cookiecutter project structure that already contains a README.md file) Create a README file:
+In case you are not already using the cookiecutter project structure that already contains a README.md file, create a README file:
 `touch Readme.txt`
 
 Connect local repo to GitHub repository
