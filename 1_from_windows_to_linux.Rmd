@@ -1,0 +1,75 @@
+---
+title: "From windows to linux"
+author: "Eole Cervenka"
+date: "July 8, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Why use Linux ?
+
+Modern days dev need to work with Open Source technology which are native to Unix and do not work smoothly on Windows.
+Hence, it is prefered to use a UNIX system to use Open Source software technology.
+
+## How to transition to a Linux system ?
+
+### Option 1: Install ubuntu on your machine
+
+#### A. Wubi
+
+Wubi is the plug-and-play option to try-out Ubuntu as a dual boot. You can install Wubi from your Windows session just as you would install any software and it creates a dual-boot Windows / Ubuntu on your machine.
+
+1. Install Wubi
+1. Use Ubuntu on your machine
+
+**Pros:**
+
++ Dead easy to install, to use and to uninstall
++ Safe, you cannot mess up anything
+
+**Cons:**
+
++ 30 GB limit for the Ubuntu partition
+
+[MORE INFO](http://wubi.sourceforge.net/faq.php)
+
+#### B. Create a partition for Ubuntu on your computer
+
+1. Back up your system (cloud or external drive)
+1. Load Ubuntu on USB or LiveCD image (.iso)
+1. Boot computer from your install media
+1. Resize your partition
+1. Complete intall
+
+**Pros:**
+
++ Customize your setup as needed
++ Relatively easy to resize partition if needed later on with GParted.
+
+**Cons:**
+
++ Mishandling partition resize can cause boot problem and you can end up losing your data if you did not back it up.
++ Reinstalling your Windows system after messing your partition is time consuming.
+
+[MORE INFO](https://help.ubuntu.com/community/WindowsDualBoot)
+
+### Option 2: Use the Ubuntu usermode from Windows 10 kernel
+
+Windows 10 implemented a "Windows subsystem for Linux"
+
+1. Open the command-line:
+1. type in: `bash`
+1. type in: `lsb_release -a`
+
+### Option 3: cygwin
+
++ install cygwin (http://www.cygwin.com/)
++ msys/mingw (http://www.mingw.org/wiki/MSYS)
+
+
+### Option 4: install a full Linux distribution in a virtual machine
+
++ Virtualbox, docker
