@@ -1,8 +1,9 @@
 # Project Structure For Data Science
 
-The purpose of this repository is to put together useful information to learn how to structure a data science project.
+*The purpose of this repository is to put together useful information to learn how to structure a data science project.*
 
-Currently in progress:
+
+**[Currently in progress]**
 
 ## Why and how to ditch Windows for Linux
 
