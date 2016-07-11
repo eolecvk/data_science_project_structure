@@ -6,7 +6,10 @@
 ## Requirements
 
 + Python 2.7 or 3.5
-+ cookiecutter Python package >= 1.4.0: `pip install cookiecutter`
++ cookiecutter Python package >= 1.4.0:
+```
+% pip install cookiecutter
+```
 
 ## Starting a new project
 
