@@ -12,9 +12,23 @@ blah
   + `git config --global user.name "Your Name Here"`
   + `git config --global user.email "your_email@youremail.com"`
 
-## Example
+## Use case #1
 
-blah
+First, copy local project folder on local computer as needed:
+`cp -r current/folder/location new/folder/location`
+
+Then move to the new project folder:
+`cd my/new/project/folder`
+
+Initialize git repository from project folder:
+`git init`
+
+In case you are not already using the cookiecutter project structure that already contains a README.md file, create a README file:
+`touch Readme.txt`
+
+Connect local repo to GitHub repository
+`git remote add origin https://github.com/username/myproject.git`
+
 
 ## Git-Specific Commands
 
