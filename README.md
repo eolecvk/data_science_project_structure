@@ -9,6 +9,9 @@
 
 Linux will make your life easier. I promise.
 
+## [Core principles for Data science project management](...)
+
+
 ## [Walkthrough of the `cookiecutter` package (python)](https://github.com/eolecvk/data_science_project_structure/blob/master/2_cookiecutter_datascience.Rmd)
 
 `cookiecutter` is a neat package that will help you generate compelling project structures in Python.
