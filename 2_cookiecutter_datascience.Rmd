@@ -73,6 +73,7 @@
 
 ### `LICENSE`
 
+The `LICENSE` file contains the license terms protecting your code.
 A software license tells others what they can and can't do with your source code.
 
 Public repositories on GitHub are often used to share open source software.
@@ -122,12 +123,9 @@ Don't put it in the repo (use .gitignore to exclude it) if:
 ### `doc`
 
 `doc` is the documentation file for your project.
-
 We'll go through how to use Sphinx to create intelligent and beautiful documentation.
 
-Sphinx uses reStructuredText (`.rst`) as its markup language.
-It supports ma
-
+Sphinx uses reStructuredText (`.rst`) as its markup language and support multiple output formats including html, LaTex, pdf.
 
 [sphinx-doc tutorial](http://www.sphinx-doc.org/en/stable/tutorial.html)
 
@@ -135,7 +133,6 @@ Install Sphinx:
 ```
 % pip install Sphinx
 ```
-
 Set up the documentation sources:
 ```
 % sphinx-quickstart
