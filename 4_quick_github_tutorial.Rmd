@@ -1,8 +1,6 @@
 # Using Git
 
-## Philosophy of Git
-
-blah
+[Git website](https://git-scm.com/)
 
 ## Setting up Github + Git for the first time
 
