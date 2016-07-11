@@ -22,7 +22,7 @@ Notebook packages like the Jupyter notebook, Beaker notebook, Zeppelin, and othe
 Since notebooks are challenging objects for source control (e.g., diffs of the json are often not human-readable and merging is near impossible), we recommended not collaborating directly with others on Jupyter notebooks. There are two steps we recommend for using notebooks effectively:
 
 1. Follow a naming convention that shows the owner and the order the analysis was done in. We use the format `<step>-<ghuser>-<description>.ipynb` (e.g., 0.3-bull-visualize-distributions.ipynb).
-1. Refactor the good parts. Don't write code to do the same task in multiple notebooks. If it's a data preprocessing task, put it in the pipeline at `src/data/make_dataset.py` and load data from data/interim. If it's useful utility code, refactor it to `src` and import it into notebooks with a cell like the following. If updating the system path is icky to you, we'd recommend making a Python package (there is a cookiecutter for that as well) and installing that as an editable package with `pip install -e`.
+2. Refactor the good parts. Don't write code to do the same task in multiple notebooks. If it's a data preprocessing task, put it in the pipeline at `src/data/make_dataset.py` and load data from data/interim. If it's useful utility code, refactor it to `src` and import it into notebooks with a cell like the following. If updating the system path is icky to you, we'd recommend making a Python package (there is a cookiecutter for that as well) and installing that as an editable package with `pip install -e`.
 
 ```
 # Load the "autoreload" extension
@@ -64,31 +64,33 @@ Approach#2: Use environment manager `virtualenv` (+ virtualenvwrapper for managi
 
 **with Conda:**
 
-1. Create an environment:
+Create an environment:
 ```
 % conda create --name $ENVIRONMENT_NAME python
 ```
-2. Activate an environment
+Activate the environment
 ```
 % source activate $ENVIRONMENT_NAME
 ```
-3. Install a package you need:
+Install any package you need:
 ```
 % conda install $PACKAGE_NAME
 ```
-4. Save a reference of the installed package versions:
+Save a reference of the installed package versions:
 ```
 % conda list --export  > requirements.txt
 ```
 
 **With virtualenv + pip**
 
+[virtualenv documentation](https://virtualenv.pypa.io/en/stable/userguide/#usage)
+
 1. Run `mkvirtualenv` when creating a new project
 1. `pip install` the packages that your analysis needs
 1. Run `pip freeze > requirements.txt` to pin the exact package versions used to recreate the analysis
 If you find you need to install another package, run `pip freeze > requirements.txt` again and commit the changes to version control.
 
-[virtualenv documentation](https://virtualenv.pypa.io/en/stable/userguide/#usage)
+Cheat sheet:
 [conda vs pip vs virtualenv](http://conda.pydata.org/docs/_downloads/conda-pip-virtualenv-translator.html)
 
 
