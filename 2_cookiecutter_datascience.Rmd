@@ -67,3 +67,99 @@
 └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
 
 ```
+
+
+## Structure breakdown
+
+### `LICENSE`
+
+A software license tells others what they can and can't do with your source code.
+
+Public repositories on GitHub are often used to share open source software.
+If you publish your source code in a public repository on GitHub, you have accepted the Terms of Service which do allow other GitHub users some rights. Specifically, you allow others to view and fork your repository within the GitHub site.
+
+The absence of a license means that the default copyright laws apply. This means that you retain all rights to your source code and that nobody else may reproduce, distribute, or create derivative works from your work.
+
+
++ [About licenses, Github website](https://help.github.com/articles/open-source-licensing/)
++ [Choose your license, powered by Github](http://choosealicense.com/)
+
+
+### `README.md`
+
++ Header and a Brief description (should match package.json)
++ Example (if applicable)
++ Motivation (if applicable)
++ API Documentation: This will likely vary considerably from library to library.
++ Installation
++ Tests
++ Contributors
++ License
+
+** Misc **
+
+1. The file is named exactly README.md
+2. The license file is named exactly LICENSE
+3. The entire license is not included in README.md (just a snippet saying for instance "Work under MIT license")
+
+
+### `Data`
+
+To put in repo or not to put in repo? [Stackoverflow answer](http://stackoverflow.com/questions/13115058/how-to-manage-large-data-files-with-github)
+
+Put it in the repo if:
++ you want to keep track of the changes
++ it is actually a part of the project and you want people to receive it when they clone the repo
+
+Don't put it in the repo (use .gitignore to exclude it) if:
++ it changes often but the changes are not meaningful and you don't want to keep the history
++ it is available online or you can make it available online and put a link or something in the repo for people to know where to find it
+
+* Dropbox is good if you don't have lots of people downloading it;
+* otherwise Amazon S3 is your best bet for hosting it
+
+
+### `doc`
+
+`doc` is the documentation file for your project.
+
+We'll go through how to use Sphinx to create intelligent and beautiful documentation.
+
+Sphinx uses reStructuredText (`.rst`) as its markup language.
+It supports ma
+
+
+[sphinx-doc tutorial](http://www.sphinx-doc.org/en/stable/tutorial.html)
+
+Install Sphinx:
+```
+% pip install Sphinx
+```
+
+Set up the documentation sources:
+```
+% sphinx-quickstart
+```
++ answer questions; be sure to say yes to the `autodoc` extension
+
+Define the document structure by adding document to the master document `index.rst` under the `toctree` object.
+
+For instance; to add `intro` and `tutorial`:
+```
+.. toctree::
+   :maxdepth: 2
+
+   intro
+   tutorial
+   ...
+
+```
+
+Run the build:
+```
+% sphinx-build -b html sourcedir builddir
+```
+or, if using `sphinx-quickstart`, simply 
+```
+% make html
+```
