@@ -108,6 +108,7 @@ The absence of a license means that the default copyright laws apply. This means
 
 
 **Misc**
+
 1. The file is named exactly README.md
 2. The license file is named exactly LICENSE
 3. The entire license is not included in README.md (just a snippet saying for instance "Work under MIT license")
