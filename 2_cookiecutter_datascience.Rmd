@@ -97,8 +97,8 @@ The absence of a license means that the default copyright laws apply. This means
 + Contributors
 + License
 
-** Misc **
 
+**Misc**
 1. The file is named exactly README.md
 2. The license file is named exactly LICENSE
 3. The entire license is not included in README.md (just a snippet saying for instance "Work under MIT license")
@@ -108,11 +108,11 @@ The absence of a license means that the default copyright laws apply. This means
 
 To put in repo or not to put in repo? [Stackoverflow answer](http://stackoverflow.com/questions/13115058/how-to-manage-large-data-files-with-github)
 
-Put it in the repo if:
+**Put it in the repo if:**
 + you want to keep track of the changes
 + it is actually a part of the project and you want people to receive it when they clone the repo
 
-Don't put it in the repo (use .gitignore to exclude it) if:
+**Don't put it in the repo (use .gitignore to exclude it) if:**
 + it changes often but the changes are not meaningful and you don't want to keep the history
 + it is available online or you can make it available online and put a link or something in the repo for people to know where to find it
 
@@ -125,9 +125,7 @@ Don't put it in the repo (use .gitignore to exclude it) if:
 `doc` is the documentation file for your project.
 We'll go through how to use Sphinx to create intelligent and beautiful documentation.
 
-Sphinx uses reStructuredText (`.rst`) as its markup language and support multiple output formats including html, LaTex, pdf.
-
-[sphinx-doc tutorial](http://www.sphinx-doc.org/en/stable/tutorial.html)
+Sphinx uses reStructuredText (`.rst`) as its markup language and support multiple output formats including html, LaTex, pdf. [sphinx-doc tutorial](http://www.sphinx-doc.org/en/stable/tutorial.html)
 
 Install Sphinx:
 ```
@@ -151,7 +149,6 @@ For instance; to add `intro` and `tutorial`:
    ...
 
 ```
-
 Run the build:
 ```
 % sphinx-build -b html sourcedir builddir
