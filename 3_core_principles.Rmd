@@ -56,13 +56,41 @@ There are other tools for managing DAGs that are written in Python instead of a 
 ### Build from the environment up
 
 The first step in reproducing an analysis is always reproducing the computational environment it was run in. You need the same tools, the same libraries, and the same versions to make everything play nicely together.
+By listing all of your requirements in the repository (we include a requirements.txt file) you can easily track the packages needed to recreate the analysis.
 
-One effective approach to this is use virtualenv (we recommend virtualenvwrapper for managing virtualenvs). By listing all of your requirements in the repository (we include a requirements.txt file) you can easily track the packages needed to recreate the analysis. Here is a good workflow:
+Aproach#1: Use [conda](http://conda.pydata.org/docs/using/index.html) as environment manager + package manager
+
+Approach#2: Use environment manager `virtualenv` (+ virtualenvwrapper for managing virtualenvs) and `pip` as package manager.
+
+**with Conda:**
+
+1. Create an environment:
+```
+% conda create --name $ENVIRONMENT_NAME python
+```
+2. Activate an environment
+```
+% source activate $ENVIRONMENT_NAME
+```
+3. Install a package you need:
+```
+% conda install $PACKAGE_NAME
+```
+4. Save a reference of the installed package versions:
+```
+% conda list --export  > requirements.txt
+```
+
+**With virtualenv + pip**
 
 1. Run `mkvirtualenv` when creating a new project
 1. `pip install` the packages that your analysis needs
 1. Run `pip freeze > requirements.txt` to pin the exact package versions used to recreate the analysis
 If you find you need to install another package, run `pip freeze > requirements.txt` again and commit the changes to version control.
+
+[virtualenv documentation](https://virtualenv.pypa.io/en/stable/userguide/#usage)
+[conda vs pip vs virtualenv](http://conda.pydata.org/docs/_downloads/conda-pip-virtualenv-translator.html)
+
 
 If you have more complex requirements for recreating your environment, consider a virtual machine based approach such as Docker or Vagrant. Both of these tools use text-based formats (Dockerfile and Vagrantfile respectively) you can easily add to source control to describe how to create a virtual machine with the requirements you need.
 
