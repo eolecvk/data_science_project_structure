@@ -14,19 +14,13 @@ blah
 
 ## Use case #1: Upload a local project to GitHub
 
-1. Go to your local project folder:
-`cd my/local/project/folder`
+1. > `cd my/local/project/folder` ; Go to your local project folder
 
-2. Initialize a git repository from the project folder:
-```
-git init
-```
+2. > `git init` ; Initialize a git repository from the project folder:
 
-3. In case you are not already using the `cookiecutter` package which already contains a README.md file, create a README file:
-```touch Readme.txt```
+3. > (Optional) `touch Readme.txt` ; create a README file in case you are not already using the `cookiecutter` package which already contains a README.md file.
 
-4. Connect local repo to GitHub repository
-`git remote add origin https://github.com/username/myproject.git`
+4. > `git remote add origin https://github.com/username/myproject.git` ; Connect local repo to GitHub repository
 
 
 ## Git-Specific Commands
