@@ -1,5 +1,7 @@
 ## Project management core principles
 
+* Source: [Cookie Cutter for Data Science, drivendata.org](http://drivendata.github.io/cookiecutter-data-science/)
+
 ### Data is immutable
 
 + Don't ever edit your raw data, especially not manually, and especially not in Excel.
