@@ -12,21 +12,18 @@ blah
   + `git config --global user.name "Your Name Here"`
   + `git config --global user.email "your_email@youremail.com"`
 
-## Use case #1
+## Use case #1: Upload a local project to GitHub
 
-First, copy local project folder on local computer as needed:
-`cp -r current/folder/location new/folder/location`
+1. Go to your local project folder:
+`cd my/local/project/folder`
 
-Then move to the new project folder:
-`cd my/new/project/folder`
-
-Initialize git repository from project folder:
+2. Initialize a git repository from the project folder:
 `git init`
 
-In case you are not already using the cookiecutter project structure that already contains a README.md file, create a README file:
+3. In case you are not already using the `cookiecutter` package which already contains a README.md file, create a README file:
 `touch Readme.txt`
 
-Connect local repo to GitHub repository
+4. Connect local repo to GitHub repository
 `git remote add origin https://github.com/username/myproject.git`
 
 
