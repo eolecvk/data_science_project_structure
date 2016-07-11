@@ -18,10 +18,12 @@ blah
 `cd my/local/project/folder`
 
 2. Initialize a git repository from the project folder:
-`git init`
+```
+git init
+```
 
 3. In case you are not already using the `cookiecutter` package which already contains a README.md file, create a README file:
-`touch Readme.txt`
+```touch Readme.txt```
 
 4. Connect local repo to GitHub repository
 `git remote add origin https://github.com/username/myproject.git`
