@@ -29,9 +29,10 @@ Initialize a git repository from the project folder:
 % touch Readme.txt
 ```
 
-Connect local repo to GitHub repository
-`% git remote add origin https://github.com/username/myproject.git`
-
+Connect local repo to GitHub repository:
+```
+% git remote add origin https://github.com/username/myproject.git
+```
 
 ## Git-Specific Commands
 
