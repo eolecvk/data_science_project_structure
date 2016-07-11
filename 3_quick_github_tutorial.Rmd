@@ -14,7 +14,7 @@ blah
 
 ## Use case #1: Upload a local project to GitHub
 
-1. > `cd my/local/project/folder` ; Go to your local project folder
+1. >> `cd my/local/project/folder` ; Go to your local project folder
 
 2. > `git init` ; Initialize a git repository from the project folder:
 
