@@ -23,6 +23,6 @@ Linux will make your life easier. I promise.
 + Keep secrets and configuration out of version control
 
 
-## [Start using git](https://github.com/eolecvk/data_science_project_structure/blob/master/4_quick_github_tutorial.Rmd)
+## [Start using Git](https://github.com/eolecvk/data_science_project_structure/blob/master/4_quick_github_tutorial.Rmd)
 
 Quick tutorial to use version control tool Git from a Bash command line
