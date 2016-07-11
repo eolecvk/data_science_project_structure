@@ -10,6 +10,7 @@
 
 ## Starting a new project
 
+1. Go into the local directory where you want to store the project files: `cd your/project/directory`
 1. Console: `cookiecutter https://github.com/drivendata/cookiecutter-data-science`
 1. Input project name
 1. Input repo name
