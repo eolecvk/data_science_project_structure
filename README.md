@@ -1,6 +1,6 @@
 # Project Structure For Data Science
 
-*The purpose of this repository is to put together useful information to learn how to structure a data science project.*
+*The purpose of this repository is to put together useful information on how to structure a data science project.*
 
 
 **[Currently in progress]**
@@ -25,4 +25,4 @@ Linux will make your life easier. I promise.
 
 ## [Start using git](https://github.com/eolecvk/data_science_project_structure/blob/master/4_quick_github_tutorial.Rmd)
 
-Quick tutorial to use version control tool Git from Bash
+Quick tutorial to use version control tool Git from a Bash command line
